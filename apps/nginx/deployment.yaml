@@ -17,10 +17,6 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
-        volumeMounts:
-        - name: nginx-html
-          mountPath: /usr/share/nginx/html
-          subPath: index.html
       volumes:
       - name: nginx-html
         configMap:
